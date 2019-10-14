@@ -1,0 +1,25 @@
+.tabs {
+  font-size: 12px;
+  display: flex;
+}
+.tabs .tab {
+  margin-left: 10px;
+  border-right: solid 1px;
+}
+.tabs .tab .row {
+  width: 100%;
+  display: inline-flex;
+}
+.tabs .tab .row div {
+  padding: 0 10px;
+  width: 70px;
+}
+.orders-count {
+  margin-left: 50px;
+}
+.bold-price > div {
+  font-weight: 700;
+}
+
+
+/*# sourceMappingURL=main.css.map*/

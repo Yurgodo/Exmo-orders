@@ -1,36 +1,49 @@
 {
-  "name": "lev",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@types/jest": "24.0.18",
-    "@types/node": "12.7.12",
-    "@types/react": "16.9.5",
-    "@types/react-dom": "16.9.1",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0",
-    "typescript": "3.6.4"
-  },
+  "name": "exmo-orders-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "build": "webpack --mode production"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "keywords": [],
+  "author": "ygodorov",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "@types/bootstrap": "^4.2.0",
+    "@types/jest": "^23.3.12",
+    "@types/node": "^10.14.21",
+    "@types/react": "^16.7.18",
+    "@types/react-bootstrap": "^0.32.15",
+    "@types/react-dom": "^16.0.11",
+    "@types/react-hot-loader": "^4.1.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "axios": "^0.19.0",
+    "babel-loader": "^8.0.5",
+    "bootstrap": "^4.2.1",
+    "css-loader": "^2.1.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "react": "^16.7.0",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.7.0",
+    "react-hot-loader": "^4.6.3",
+    "reactstrap": "^7.0.2",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^1.0.0",
+    "typescript": "^3.2.2",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@types/reactstrap": "^6.4.4"
   }
 }
