@@ -18,7 +18,7 @@ export default class Tab extends React.Component<ITabProps, ITabState> {
                 <h2>{this.props.header}</h2>
                 {this.props.data.filter( elem => elem[0].length < this.props.priceLength + 1).slice(0, this.props.ordersCount).map( (elem, index) => {
                     let isBTC = this.props.isBTC;
-                    let isBold = isBTC ? elem[1] > 1 : elem[2] > 1000;
+                    let isBold = isBTC ? elem[1] > 0.5 : elem[2] > 1000;
                     return <div className={`row ${isBold ? "bold-price" : ""}`} key={index}>
                         <div>{elem[0]}</div>
                         <div>{elem[1]}</div>
